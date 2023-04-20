@@ -32,20 +32,29 @@
         </div>
 
         <!-- Game board -->
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
+            <div class="square shadow" data-id="square"></div>
 
             <!-- Scoreboard -->
-            <div class="score"></div>
-            <div class="score"></div>
-            <div class="score"></div>
+            <div class="score shadow" style="background-color: var(--turquoise)">
+              <p>Player 1</p>
+              <span data-id="p1-wins">0 Wins</span>
+            </div>
+            <div class="score shadow" style="background-color: var(--light-gray)">
+              <p>Ties</p>
+              <span data-id="ties">0</span>
+            </div>
+            <div class="score shadow" style="background-color: var(--yellow)">
+              <p>Player 2</p>
+              <span data-id="p2-wins">0 Wins</span>
+            </div>
 
         </div>
     </main>
@@ -63,5 +72,13 @@
           >
         </p>
       </footer>
+          <!-- Modal that opens when game ends -->
+    <div class="modal hidden" data-id="modal">
+      <div class="modal-contents">
+        <p data-id="modal-text">Player 1 wins!</p>
+        <button data-id="modal-btn">Play again</button>
+      </div>
+    </div>
+
 </body>
 </html>
